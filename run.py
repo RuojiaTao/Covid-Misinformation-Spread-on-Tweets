@@ -168,7 +168,8 @@ def main(targets):
 
     if 'test' in targets:
         targets=["EDA",'misinfo','top_tweets','k_core','NLP','Bot_detection']
-
+        df=pd.read_pickle('test/testdata/test.pkl')
+        all_path = ['all_path']
     #EDA: find link/RT/ check number of unqiue author
     if 'EDA' in targets:
         print('EDA Start')
