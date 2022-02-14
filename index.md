@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Lehan Li & Ruojia Tao" content="Senior Capstone Project">
+        <title>Global Dashboard</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1><b>Spread of Misinformation</b></h1>
+            </section>
+            
+            <hr>
 
-You can use the [editor on GitHub](https://github.com/RuojiaTao/Covid-Misinformation-Spread-on-Tweets/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+            <section>
+                <div class="Introduction">
+                    <h1>Introduction</h1>
+                    <p>With the boom of social media, massive amount of misinformation is spread over the internet. 
+                        It generate severe effect that could influence the outcome of presidential election. And under
+                        this pendamic, it could spread misinformation regarding to Covid 19 and vaccines. Thus, we decide
+                        to examine the rational behind such spreading patterns. We download 2 million tweets related to Covid 19
+                        from twitter and conduct analysis to expolre the relationship between misinformation, fact checker and 
+                        the social network. 
+                    </p>
+                </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+                <div class="Result">
+                    <h1>Result</h1>
+                    <p>And we present our finding under this section including the proportion of misinformative and fact checking tweets, 
+                        k core analysis, bot detection and sentiment analysis. 
+                    </p>
+                </div>
 
-### Markdown
+                <br>
+            
+            </section>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RuojiaTao/Covid-Misinformation-Spread-on-Tweets/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+            <hr>
+        
+        </main>
+    </body>
+</html>
