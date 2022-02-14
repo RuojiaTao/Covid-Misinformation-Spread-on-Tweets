@@ -23,10 +23,46 @@
                         the social network. 
                     </p>
                 </div>
+                
+                <div class="Methods">
+                    <h1>Approaching</h1>
+                    <p>Start introduce our approach.
+                    </p>
+                </div>
+                
+                <div class="Data Collection and Cleanning">
+                    <h1>Data Collection and Cleanning</h1>
+                    <p>We introduce our data collection and cleaning steps here.
+                    </p>
+                </div>
+                
+                <div class="EDA">
+                    <h1>EDA</h1>
+                    <p>We introduce our EDA process and some interesting plot here.
+                    </p>
+                </div>
+                
+                <div class="Set up K-core">
+                    <h1>Result</h1>
+                    <p>We introduce our data collection and cleaning steps here.
+                    </p>
+                </div>
+                
+                <div class="NLP">
+                    <h1>Nature Language Processing</h1>
+                    <p>We introduce our Nature language processing here
+                    </p>
+                </div>
+                
+                <div class="Boto_users">
+                    <h1>BOT User in twitter</h1>
+                    <p>We introduce our bot user analyze here.
+                    </p>
+                </div>
 
                 <div class="Result">
                     <h1>Result</h1>
-                    <p>And we present our finding under this section including the proportion of misinformative and fact checking tweets, 
+                    <p>We present our finding under this section including the proportion of misinformative and fact checking tweets, 
                         k core analysis, bot detection and sentiment analysis. 
                     </p>
                 </div>
