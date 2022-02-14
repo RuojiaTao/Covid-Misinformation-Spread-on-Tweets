@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta name="Lehan Li & Ruojia Tao" content="Senior Capstone Project">
-        <title>Global Dashboard</title>
+        <title>Spread of Misinformation</title>
     </head>
     <body>
         <main>
