@@ -238,8 +238,7 @@ body {font-family: "Lato", sans-serif}
           Looks like the topic relvant to topci is always come with netural and negative sentiments, and rarely with the positive sentiments.
           When the degree of k core increases, the negative level increase and netural level decrease. That means when we approaching to the core part of the social network, the people become more negative.
           While we know that the core part of social network is also where the misinformation condensly located. 
-          SO, this phenomen could means users in the center of the social structure tends to have negative reaction because they are being exposed to misinformation.
-      
+          So, this phenomen could means users in the center of the social structure tends to have negative reaction because they are being exposed to misinformation.
         </p>
     </figure>
     </p>
@@ -251,19 +250,54 @@ body {font-family: "Lato", sans-serif}
         <div id="point"></div>
         <p class="highcharts-description">
            This is the graph of Z-score when we compare the negative sentiment of group that has K core degree is 1 and the group has other k-core degree. 
-          This graph obviously shows the corelation decreases when the number of degree increase.
+          This graph obviously shows the corelation decreases when the number of degrees increase. That means when the degrees increases the users with the spefic degrees will become more
+          different with the user that has degree 1.
         </p>
     </figure>
-      
-     <h3 class="w3-wide w3-center">Result of A/B Testing of Negative Sentiment Between 2 Groups with Different K-Core results</h3>
+    </p>  
+     <h4 class="w3-wide w3-center">Result of A/B Testing of Negative Sentiment Between 2 Groups with Different K-Core results</h4>
     <p align="left" style="font-family:verdana"> 
     <img src="plot.JPG" style="width:100%">
     </p>
     <p class="highcharts-description">
-            Here we can obviously know that the there is mainly two groups of different kinds of users. The users 
+            In this graph, we present the result that if the negative sentiment of users in two groups with different k-core degrees, are they different or not. 
+      Here we can obviously know that when two groups have different k-core degrees, they will have different negative sentiment scores.
+        </p>
+  </div>
+          
+          
+    <p align="left" style="font-family:verdana"> 
+    <img src="plot.JPG" style="width:100%">
+    </p>   
+       
+  <h3 class="w3-wide w3-center">Natural Language Processing</h3>
+    <p align="left" style="font-family:verdana"> 
+      <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p align="left" style="font-family:verdana"> 
+          In general, majority of tweets are neutral, and proportion of negative tweets outweights the proportion of positive tweets. 
+          Looks like the topic relvant to topci is always come with netural and negative sentiments, and rarely with the positive sentiments.
+          When the degree of k core increases, the negative level increase and netural level decrease. That means when we approaching to the core part of the social network, the people become more negative.
+          While we know that the core part of social network is also where the misinformation condensly located. 
+          So, this phenomen could means users in the center of the social structure tends to have negative reaction because they are being exposed to misinformation.
+        </p>
+    </figure>
+    </p>
+
+
+    <h3 class="w3-wide w3-center">Connect Results of Previous 2 Parts</h3>
+    
+     <h4 class="w3-wide w3-center">Result of Fitting the Parameters into a </h4>
+    <p align="left" style="font-family:verdana"> 
+    <img src="output.png" style="width:100%">
+    </p>
+    <p class="highcharts-description">
+            In order to find the realtionship between different bot users, k-core degress, and the negative sentiment. We fit a sample linear model with these parameters and we try
+      to use the coefficient and the p-value to understand the relationship between the parameters.
         </p>
   </div>
 
+       
   
   
 <!-- End Page Content -->
