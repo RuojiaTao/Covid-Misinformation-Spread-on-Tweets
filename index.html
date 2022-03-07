@@ -56,7 +56,7 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="twitter.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Spread of Misinformation Over Twitter</h3>
+      <h2>Spread of Misinformation Over Twitter</h2>
       <p><b>Ruojia Tao, Lehan Li</b></p>   
     </div>
   </div>
@@ -283,15 +283,23 @@ body {font-family: "Lato", sans-serif}
     </p>
 
 
-    <h3 class="w3-wide w3-center">Connect Results of Previous 2 Parts</h3>
-    
-     <h5 class="w3-wide w3-center">Result of Fitting the Parameters into a </h5>
+    <h3 class="w3-wide w3-center">Connect Results of Previous Parts</h3>
+    <p class="highcharts-description">
+            Now, in our previous finding, we know that:</p> 
+        <p class="highcharts-description">
+            We find that there is some relationship between negative sentiment, bot users, misinformation, and k-core degree. Now we try to quantization how they influence each other.
+        </p>
+    <h5 class="w3-wide w3-center">Parameters of Fitting the Data into Linear Model</h5>
     <p align="left" style="font-family:verdana"> 
-    <img src="output.png" style="width:50%">
+    <img src="output.png" style="width:100%">
     </p>
     <p class="highcharts-description">
-            In order to find the realtionship between different bot users, k-core degress, and the negative sentiment. We fit a sample linear model with these parameters and we try
-      to use the coefficient and the p-value to understand the relationship between the parameters.
+            In order to find the relationship between different bot users, k-core degress, and the negative sentiment. We fit a sample linear model with these parameters to predict the negative sentiment
+      and we try to use the coefficient and the p-value to understand the relationship between the parameters. According to the p-value of all our target parameters, we can know that they
+      are all highly related with the negative sentiment. The k core degree have a positive value towards in predicting the negative sentiment, which means when it increase the negative sentiment increase.
+      Same things for the core bot users. This means when the user is a bot user near the core, it is likely to have more negative sentiment. While the bots at the outside part of network
+      will be more likely to have less negative sentiment.
+      
         </p>
   </div>
 
