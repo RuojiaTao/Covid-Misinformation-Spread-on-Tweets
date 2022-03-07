@@ -194,6 +194,9 @@ body {font-family: "Lato", sans-serif}
       HTTP request, 0.1% contains misinformation, and 0.0019% contains fact checking information. The
       difference between misinformation and fact checking tweet is large. It’s likely due to the size difference
       between two database, the misinformation database contains more urls than the fact checking database.
+      Our ways of checking misinformation is not very effective, so we will keep on our analyze with the result of this referecence papaer: 
+      <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087</a>
+      Based on this website, the misinformation is centered at the core of social network.
     </p>
 
     <h3 class="w3-wide w3-center">Bot Detection</h3>
@@ -213,9 +216,11 @@ body {font-family: "Lato", sans-serif}
         <div id="container"></div>
         <p align="left" style="font-family:verdana"> 
           In general, majority of tweets are neutral, and proportion of negative tweets outweights the proportion of positive tweets. 
-          As approaching to the center of the social graph (k becomes larger in the k core decomposition), proportion of neutral decreases while the proportion of negative tweets increases and positive tweets stays roughly the same. 
-          Users in the center of the social structure tends to have negative reaction when being exposed to misinformative websites.
-          And majority of users in the center of the graph tends to hold clear and obvious opinions towards misinformation. 
+          Looks like the topic relvant to topci is always come with netural and negative sentiments, and rarely with the positive sentiments.
+          When the degree of k core increases, the negative level increase and netural level decrease. That means when we approaching to the core part of the social network, the people become more negative.
+          While we know that the core part of social network is also where the misinformation condensly located. 
+          SO, this phenomen could means users in the center of the social structure tends to have negative reaction because they are being exposed to misinformation.
+      
         </p>
     </figure>
     </p>
@@ -234,6 +239,9 @@ body {font-family: "Lato", sans-serif}
     <p align="left" style="font-family:verdana"> 
     <img src="plot.JPG" style="width:100%">
     </p>
+    <p class="highcharts-description">
+            Here we can obviously know that the there is mainly two groups of different kinds of users. The users 
+        </p>
   </div>
 
   
