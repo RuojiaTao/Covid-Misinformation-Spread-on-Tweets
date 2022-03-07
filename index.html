@@ -148,6 +148,8 @@ body {font-family: "Lato", sans-serif}
         pre-trained model is trained with only English, tweets that are not written in English are removed.
         This action should not exert significant influence the final result, 
         since the percentage of tweets which contains foreign languages is low to none (about less than 0.005 percentage).
+        The pre-trained model will return a set of results which has 3 values target to the percentage of  postive, netural, and negative emtions in the sentence. We will analzye the 
+        result based on the returned values.
       </p>
     </div>
   </div>
@@ -227,7 +229,10 @@ body {font-family: "Lato", sans-serif}
             are on average taller and heavier than women.
         </p>
     </figure>
-    <img src="plot.jpg" style="width:100%">
+      
+     <h3 class="w3-wide w3-center">Result of A/B Testing of Negative Sentiment Between 2 Groups with Different K-Core results</h3>
+    <p align="left" style="font-family:verdana"> 
+    <img src="plot.JPG" style="width:100%">
     </p>
   </div>
 
