@@ -195,7 +195,7 @@ body {font-family: "Lato", sans-serif}
       difference between misinformation and fact checking tweet is large. It’s likely due to the size difference
       between two database, the misinformation database contains more urls than the fact checking database.
       Our ways of checking misinformation is not very effective, so we will keep on our analyze with the result of this referecence papaer: 
-      <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087</a>
+      <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196087">Anatomy of an online misinformation network</a>
       Based on this website, the misinformation is centered at the core of social network.
     </p>
 
@@ -203,7 +203,6 @@ body {font-family: "Lato", sans-serif}
         
     <p align="left" style="font-family:verdana"> 
       <figure class="highcharts-figure">
-        <div id="bot"></div>
         <p align="left" style="font-family:verdana"> 
          According to this graph, we can know that the bot-users is mainly at two ends of the k-core degree that means the bot is mainly located at the core of the social network or the outsidepart
           of the social network. The bot is hardly located at the middle of the social network. We think this spread of bot users could be caused by the opertion and management by the owner.
@@ -216,17 +215,12 @@ body {font-family: "Lato", sans-serif}
          We perform an A/B testing with t test on their sentiment to see if the two bot groups are different. And the result gives us a p value equals to 2.0057684873754303e-11. This small
           p-value means that these two groups have really low probability come from a same group, which means our assumption are correct. Base on this analyzation, we seperate the bot users with 
           into 2 groups: one the is bots that loacted near the core and the other group is the bots located outside.
+       </p>
     
         
     </figure>
     </p>
-        <p align="left" style="font-family:verdana"> 
-      <figure class="highcharts-figure">
-        <div id="bot"></div>
-        <p align="left" style="font-family:verdana"> 
-         Result of Predicting Negative Sentiment Score with Identifyication of Bots
-    
-        </p>
+        
         
 
     <h3 class="w3-wide w3-center">Natural Language Processing</h3>
@@ -248,7 +242,7 @@ body {font-family: "Lato", sans-serif}
     <p align="left" style="font-family:verdana"> 
       <figure class="highcharts-figure">
         <div id="point"></div>
-        <p class="highcharts-description">
+        <p align="left" style="font-family:verdana"> 
            This is the graph of Z-score when we compare the negative sentiment of group that has K core degree is 1 and the group has other k-core degree. 
           This graph obviously shows the corelation decreases when the number of degrees increase. That means when the degrees increases the users with the spefic degrees will become more
           different with the user that has degree 1.
@@ -259,7 +253,7 @@ body {font-family: "Lato", sans-serif}
     <p align="left" style="font-family:verdana"> 
     <img src="plot.JPG" style="width:100%">
     </p>
-    <p class="highcharts-description">
+    <p align="left" style="font-family:verdana"> 
             In this graph, we present the result that if the negative sentiment of users in two groups with different k-core degrees, are they different or not. 
       Here we can obviously know that when two groups have different k-core degrees, they will have different negative sentiment scores.
         </p>
@@ -269,7 +263,6 @@ body {font-family: "Lato", sans-serif}
           
        
   <h3 class="w3-wide w3-center">Natural Language Processing</h3>
-    <p align="left" style="font-family:verdana"> 
       <figure class="highcharts-figure">
         
         <p align="left" style="font-family:verdana"> 
