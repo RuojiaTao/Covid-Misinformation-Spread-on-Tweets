@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Spread of Misinformation over Social Media</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stype.css">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="script.js"></script>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Introduction</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Method</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Result</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Reference</a>
+        <a href="#" class="w3-bar-item w3-button">Author</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="twitter.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Spread of Misinformation Over Twitter</h3>
+      <p><b>Ruojia Tao, Lehan Li</b></p>   
+    </div>
+  </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Introduction</h2>
+    <p align="left" style="font-family:verdana">
+      Misinformation, just as viruses, spread via the channel created through human interaction and communication. 
+      With the advancement of technology and the internet, online media and social platforms have become the 
+      dominant approach for information intake and exchange. While social media greatly enhance the efficiency of spread of information, 
+      little fact checking is done to ensure the accuracy of the statement posted online. 
+      Misinformation presents challenges for free change of opinions and popularization of science. 
+      When it comes to public health, it can even endanger the lives of people. 
+      The total amount of misinformation grows exponentially during covid pandemic over the last two years, 
+      including the denial of existence of covid 19, rejection of covid vaccine and exaggeration of possible side effects, 
+      and anti mandatory mask requirements in public. 
+    </p>
+
+    <p align="left" style="font-family:verdana"> 
+      The project is conducted using Twitter dataset related to Covid 19 
+      to advance the understanding of the pattern of misinformation transmission. Two main topics are investigated in the project. 
+      The first topic is the analysis of the effect of bot users on the spread of misinformation. 
+      The second topic is the sentiment analysis that examines users' attitudes towards misinformation. 
+      Since online social medias users form social networks, the project also seeks to investigate the effect of social network on the above two topics.
+      Moreover, the project is also interested in exploring the change in proportion of bot users and users' attitude towards misinformation as 
+      the social network becomes more concentrated and tightly connected. 
+    </p>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Methodology</h2>
+      
+      <h3 class="w3-wide w3-center">Data</h3>
+
+      <p align="left" style="font-family:verdana"> 
+        The data source is from Panacea Lab. This dataset is an open resource towards researchers.
+        It provides the tweets IDs for posts related to covid 19. The tweet IDs are stored as the date
+        the tweets are made. Panacea Lab collected about 252 million tweets and retweets from
+        the 2020-03-22 to 2020-10-10. The project randomly samples 2 million tweets from the original dataset 
+        and conducts twitter hydration to get complete details of the tweets.
+      </p>
+
+      <h3 class="w3-wide w3-center">Misinformation Identification</h3>
+      <p align="left" style="font-family:verdana"> 
+        Misinformation identification is conducted based on the url included in tweets. The first step is the extraction the url
+        inside the tweet object, then conduct urlparse to find the root directory of the website. 
+        The website (https://iffy.news/iffy-plus/) contains a dataset of regularly publish mis/disinformation,
+        as identified by major fact-checking and journalism organizations. Then a dataset contains contains all the identified fact checking website
+        by gathering fact checking url online. Extracted url is compared with the misinformation dataset and fact checking website, and if the url is inside the
+        dataset, it is determined that tweet contains misinformative website.
+      </p>
+
+      <h3 class="w3-wide w3-center">Bot Detection</h3>
+      <p align="left" style="font-family:verdana" font-size:16px> 
+        Bot detection is conducted using an existing bot detection model for tweeter account called "Botometers" (https:
+        //github.com/IUNetSci/botometer-python) . The model takes the user id, and output the scores
+        related to spam account as well as the cap as rubrics to determine of an account is a bot. The specific
+        returned information contains two main parts: English (information for English tweets) and Universal
+        (information for every language else). For each of the two main parts, the model returns fake follower,
+        self declared bots from botwiki.org, manually labeled political bots and accounts involved in follow
+        trains that systematically delete content, accounts labeled as spambots from several datasets, and a
+        overall score for botscore. All data returned from the model is stored into a json file. 
+        The overall scores is comapred with the returned cap value, 
+        if either English or Universal overall scores exceeds the cap value, 
+        the account is claimed to be operated by bot.
+      </p>
+
+      <h3 class="w3-wide w3-center">Natural Language Processing</h3>
+      <p align="left" style="font-family:verdana"> 
+        Pre-trained model from TweetEval is used in NLP process. Raw Twitter text is cleaned before it's feed into the model. 
+        User names with the word "user" are removed to prevent the influence on the results of sentiment analyze. 
+        Links from tweets is also removed for the same reason. Since the
+        pre-trained model is trained with only English, tweets that are not written in English are removed.
+        This action should not exert significant influence the final result, 
+        since the percentage of tweets which contains foreign languages is low to none (about less than 0.005 percentage).
+      </p>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Result</h2>
+    <h3 class="w3-wide w3-center">Exploratory Data Analysis</h3>
+    
+    <div>
+      <div>
+        <p>Number of Tweets by the Same Author</p>
+        <img src="author.png" class="center" alt="Random Name" style="width:100%">
+      </div>
+      <div>
+        <p>Distribution of Length of Tweets</p>
+        <img src="length.png" class="center" alt="Random Name" style="width:100%">
+      </div>
+    </div>
+
+    
+
+
+    <p align="left" style="font-family:verdana"> 
+      The majority of users have only a few tweets, while a small proportion of users actively post tweets. 
+      The original dataset contains tweets and retweets; the proportion of retweets is 0.75. 
+      Most of the users have the tweet with length than 380 characters which it's within the processing limit of NLP model. 
+    </p>
+
+    <h3 class="w3-wide w3-center">Misinformation Identification</h3>
+    <p align="left" style="font-family:verdana"> 
+      The proportion of tweets that contain an URL is 0.3658, with only 33.12% of
+      the url in the overall dataset could successfully conduct HTTP requests. Among the url that conducted
+      HTTP request, 0.1% contains misinformation, and 0.0019% contains fact checking information. The
+      difference between misinformation and fact checking tweet is large. It’s likely due to the size difference
+      between two database, the misinformation database contains more urls than the fact checking database.
+    </p>
+
+    <h3 class="w3-wide w3-center">Bot Detection</h3>
+
+    <p align="left" style="font-family:verdana"> 
+      <figure class="highcharts-figure">
+        <div id="bot"></div>
+        <p align="left" style="font-family:verdana"> 
+          TODO
+        </p>
+    </figure>
+    </p>
+
+    <h3 class="w3-wide w3-center">Natural Language Processing</h3>
+    <p align="left" style="font-family:verdana"> 
+      <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p align="left" style="font-family:verdana"> 
+          In general, majority of tweets are neutral, and proportion of negative tweets outweights the proportion of positive tweets. 
+          As approaching to the center of the social graph (k becomes larger in the k core decomposition), proportion of neutral decreases while the proportion of negative tweets increases and positive tweets stays roughly the same. 
+          Users in the center of the social structure tends to have negative reaction when being exposed to misinformative websites.
+          And majority of users in the center of the graph tends to hold clear and obvious opinions towards misinformation. 
+        </p>
+    </figure>
+    </p>
+
+    <h3 class="w3-wide w3-center">Statistical Test of Sentiment Analysis</h3>
+
+ 
+    <div class="w3-col m6">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="1" required name="Level of K Core Decomposition" onblur="getVal()">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
