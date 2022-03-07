@@ -200,18 +200,8 @@ body {font-family: "Lato", sans-serif}
     </p>
 
     <h3 class="w3-wide w3-center">Bot Detection</h3>
-
-    <p align="left" style="font-family:verdana"> 
-      <figure class="highcharts-figure">
-        <div id="bot"></div>
-        <p align="left" style="font-family:verdana"> 
-         According to this graph, we can know that the bot-users is mainly at two ends of the k-core degree that means the bot is mainly located at the core of the social network or the outsidepart
-          of the social network. The bot is hardly located at the middle of the social network. We think this spread of bot users could be caused by the opertion and management by the owner.
-          They may have different purpose of the bots.
-    
-        </p>
         
-        <p align="left" style="font-family:verdana"> 
+    <p align="left" style="font-family:verdana"> 
       <figure class="highcharts-figure">
         <div id="bot"></div>
         <p align="left" style="font-family:verdana"> 
@@ -219,14 +209,14 @@ body {font-family: "Lato", sans-serif}
           of the social network. The bot is hardly located at the middle of the social network. We think this spread of bot users could be caused by the opertion and management by the owner.
           They may have different purpose of the bots. We are also thinking about these two groups of bots also behave differently on the sentiment.
     
-        </p>
+     </p>
         
         
-        <p align="left" style="font-family:verdana"> 
+     <p align="left" style="font-family:verdana"> 
          We perform an A/B testing with t test on their sentiment to see if the two bot groups are different. And the result gives us a p value equals to 2.0057684873754303e-11. This small
           p-value means that these two groups have really low probability come from a same group, which means our assumption are correct. Base on this analyzation, we seperate the bot users with 
           into 2 groups: one the is bots that loacted near the core and the other group is the bots located outside.
-          </p>
+    
         
     </figure>
     </p>
@@ -260,7 +250,8 @@ body {font-family: "Lato", sans-serif}
       <figure class="highcharts-figure">
         <div id="point"></div>
         <p class="highcharts-description">
-            This graph obviously shows the corelation decreases when the number of degree increase.
+           This is the graph of Z-score when we compare the negative sentiment of group that has K core degree is 1 and the group has other k-core degree. 
+          This graph obviously shows the corelation decreases when the number of degree increase.
         </p>
     </figure>
       
