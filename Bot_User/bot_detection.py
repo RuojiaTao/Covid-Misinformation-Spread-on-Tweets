@@ -62,7 +62,3 @@ def save_error(error_message, error_count):
     count_file = open("error_count.pkl", "wb")
     pickle.dump(error_count, count_file)
     count_file.close()
-
-if __name__ == '__main__':
-    error_message, error_count = bot_detection()
-    save_error(error_message, error_count)
