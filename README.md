@@ -7,8 +7,8 @@ Abstract:
 Spread of misinformation over social media posts challenges to daily information intake and exchange. Especially under current covid 19 pandemic, the disperse of misinformation regarding to covid 19 diseases and vaccination posts threats to individuals' wellbeings and general publich health. This project seeks to invertigate the spread of misinformation over social media (Twitter) under covid 19 pademic. The first topic is the effect of bot users on the spread of misinformation, and the second topic is to examine users' attitude towards misinformation. These two topics are analyze under the social structure (connected social graphs) created through user's interactions on Twitter. This project also seeks to invertigate the change in proportion of bot users and users' attitude towards misinformation as it's approaching to the center of the social network. 
 
 
-The run.py file run all part of code:
 
+ - The `run.py` file run all part of code:
  - `Data_Pre` folder contains: 
      - `hydrate_tweets_twarc.py` : hydrating the data
      - `EDA.py`: explore the raw data and try to find interesting points
