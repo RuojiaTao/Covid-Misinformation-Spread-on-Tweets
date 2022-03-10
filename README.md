@@ -8,7 +8,7 @@ Spread of misinformation over social media posts challenges to daily information
 
 
 
- - The `run.py` file run all part of code:
+ - The `run.py` file run all part of code
  - `Data_Pre` folder contains: 
      - `hydrate_tweets_twarc.py` : hydrating the data
      - `EDA.py`: explore the raw data and try to find interesting points
