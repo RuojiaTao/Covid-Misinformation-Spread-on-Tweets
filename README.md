@@ -16,6 +16,9 @@ Spread of misinformation over social media posts challenges to daily information
      - `K_Core_Degree.py`: set up a graph and calculate the K-Core degree , assign K Core degree back to all data, and plot out the spread of K-Core.
      - `sample_dataset.py` : sample a small dataset for analzye
      - `Tests_result.py` : run a linear machine learning model to predict the negative sentiment based on different parapmeters. Base on the coefficient of ML model to find the relstionship between parpameters and negative sentiment.
+ - `Bot_User` folder contains: 
+     - `bot_detection.py`: use Botomerter to predict if a user is bot or not
+     - `Bot_merge.py`: merge predictions to K Core results, generating graphs for percentage of bot useres in each K core degrees
  - `NLP` folder contains:
      - `NLP.py`: get the sentiment scores of each tweets, and plot out overall trends
      - `NLP_ab_testing`: run a 2 sample t-test to see if there is an sigificant difference between negative sentiments in different pair of groups that has different K-Core degrees
